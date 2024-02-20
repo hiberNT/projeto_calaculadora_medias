@@ -48,7 +48,7 @@ function atualizaTabela() {
 function atualizaMediaFinal() {
     const mediaFinal = calculaMediaFinal()
 
-    document.getElementById('media-final-valor').innerHTML = mediaFinal //aqui estamos organizando para aparecer o valor da divisão das notas
+    document.getElementById('media-final-valor').innerHTML = mediaFinal.toFixed(2) // to fixed limita o tanto de casas decimais ,aqui estamos organizando para aparecer o valor da divisão das notas
     document.getElementById('media-final-resultado').innerHTML = mediaFinal >=notaMinima ? spanAprovado : spanReprovado
 }
 
